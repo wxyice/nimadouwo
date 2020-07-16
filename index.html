@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="stylesheet" href="main.css">
     <script src="jquery-1.7.2.min.js"></script>
-    <script type="text/javascript" src=".jquery.qrcode.min.js"></script>
+    <script type="text/javascript" src="jquery.qrcode.min.js"></script>
     <script>setTimeout("location=location; ", (24 * 3600 * 1000) * 3); </script>
     <script>
         jQuery(function () {
@@ -37,16 +37,16 @@
             //     return null;
             // }
 
-            var name = getQueryString("name");
-            var identity = getQueryString("identity");
-            if(identity != null){
-                $(".bgr-blue").html(identity);
-            }
-            else{
-                $(".bgr-blue").html("研究生");
-            }
-            console.log(name + "的通行码")
-            $("#name").html(name + "的通行码")
+            //var name = getQueryString("name");
+            //var identity = getQueryString("identity");
+            //if(identity != null){
+            //    $(".bgr-blue").html(identity);
+            //}
+            //else{
+            //    $(".bgr-blue").html("研究生");
+            //}
+            //console.log(name + "的通行码")
+            //$("#name").html(name + "的通行码")
             var mzt = '';
             var dateTime = '';
             //var array=getJkm();
@@ -89,7 +89,7 @@
             day3.setDate(date.getDate() + 5);
             let start = day2.format("yyyy-MM-dd");
             let end = day3.format("yyyy-MM-dd");
-            // $(".time").html("有效期：" + start + " - " + end)
+            $(".time").html("有效期：" + start + " - " + end)
             console.log(day1, start, end);
             var obj = {
                 mzt: "green",
